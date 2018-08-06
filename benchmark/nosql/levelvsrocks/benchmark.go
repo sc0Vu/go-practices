@@ -138,12 +138,13 @@ func main() {
 	args := os.Args
 
 	if len(args) > 1 {
-		int64total, _ := strconv.ParseInt(args[1], 10, 0)
+		int64total, _ := strconv.ParseInt(args[1], 10, 64)
 
 		if err != nil {
 			fmt.Println(err)
 		} else {
 			total = int(int64total)
+			numbers = make([]int, total)
 		}
 	}
 
