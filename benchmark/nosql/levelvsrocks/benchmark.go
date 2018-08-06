@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"os"
 	"strconv"
 	"time"
 
@@ -134,6 +135,17 @@ func main() {
 	total := 100000
 	db, err := leveldb.OpenFile("./ldb", nil)
 	numbers := make([]int, total)
+	args := os.Args
+
+	if len(args) > 1 {
+		int64total, _ := strconv.ParseInt(args[1], 10, 0)
+
+		if err != nil {
+			fmt.Println(err)
+		} else {
+			total = int(int64total)
+		}
+	}
 
 	if err != nil {
 		fmt.Println(err)

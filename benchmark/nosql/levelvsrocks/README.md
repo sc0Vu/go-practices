@@ -21,7 +21,7 @@ $ go get github.com/tecbot/gorocksdb
 # run
 
 ```BASH
-$ go run benchmark.go
+$ go run benchmark.go [total] // total default: 100000
 
 // result
 Total data count: 100000
