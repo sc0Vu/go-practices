@@ -1,8 +1,10 @@
-hash: dd6d1de6f88d4bbdf6e80745c4a9004698593025a98c0c8e37125fca348fd442
-updated: 2018-09-04T15:22:36.289474+08:00
+hash: b7454fb7ebbdf706b16cc361b68bf8b67dd79b2b09462599e7bc825632fcda48
+updated: 2018-09-04T15:43:11.307301+08:00
 imports:
 - name: github.com/boj/redistore
   version: 0920d8493e7ffca5adae72308d5d8edd7e8aea3a
+- name: github.com/fvbock/endless
+  version: 447134032cb6a86814f570257390a379982dfc61
 - name: github.com/gin-contrib/cors
   version: cf4846e6a636a76237a28d9286f163c132e841bc
 - name: github.com/gin-contrib/sse
