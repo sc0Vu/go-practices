@@ -1,0 +1,9 @@
+# test yaml config
+
+api:
+    api_protocol: http
+    api_domain: localhost
+    api_port: 8080
+    api_debug: true
+    api_cors_domains:
+        - http://localhost:8080
