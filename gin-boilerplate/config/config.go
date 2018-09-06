@@ -2,7 +2,6 @@ package config
 
 import (
 	"io/ioutil"
-	"log"
 
 	"github.com/sirupsen/logrus"
 
@@ -16,11 +15,11 @@ var (
 
 // APIConf config
 type APIConf struct {
-	APIprotocol string   `yaml:"api_protocol"`
-	Domain      string   `yaml:"api_domain"`
-	Port        string   `yaml:"api_port"`
-	Debug       bool     `yaml:"api_debug"`
-	CORSDomains []string `yaml:"api_cors_domains"`
+	APIprotocol string   `yaml:"protocol"`
+	Domain      string   `yaml:"domain"`
+	Port        string   `yaml:"port"`
+	Debug       bool     `yaml:"debug"`
+	CORSDomains []string `yaml:"cors_domains"`
 }
 
 // DeploySet - deploy config
@@ -35,7 +34,7 @@ func init() {
 		logrus.Fatalf("read service config file error: %v", ioErr)
 	} else {
 		if ymlErr := yaml.Unmarshal(content, &dconf); ymlErr != nil {
-			log.Fatalf("error while unmarshal from db config: %v", ymlErr)
+			logrus.Fatalf("error while unmarshal from db config: %v", ymlErr)
 		}
 	}
 
