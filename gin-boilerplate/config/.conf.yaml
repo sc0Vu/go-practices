@@ -7,3 +7,10 @@ api:
     debug: true
     cors_domains:
         - http://localhost:8080
+db:
+    table: test
+    host: 127.0.0.1
+    user: root
+    password: 123456
+    max_connections: 140
+    max_idle_connections: 70

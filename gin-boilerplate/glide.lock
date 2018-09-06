@@ -1,5 +1,5 @@
-hash: b7454fb7ebbdf706b16cc361b68bf8b67dd79b2b09462599e7bc825632fcda48
-updated: 2018-09-04T15:43:11.307301+08:00
+hash: 6b621ab8937514183f4d9f6f811faa6a799be81876ac1609f8a8c5e33779155e
+updated: 2018-09-06T17:23:38.120685+08:00
 imports:
 - name: github.com/boj/redistore
   version: 0920d8493e7ffca5adae72308d5d8edd7e8aea3a
@@ -34,8 +34,12 @@ imports:
   version: 3a8eb0de07814569f0bdadffc60dda1668de90bd
 - name: github.com/gorilla/sessions
   version: 81547393f870a35be888759a606ba7bf71dbe5c7
+- name: github.com/jmoiron/sqlx
+  version: 0dae4fefe7c0e190f7b5a78dac28a1c82cc8d849
 - name: github.com/json-iterator/go
   version: 1624edc4454b8682399def8740d46db5e4362ba4
+- name: github.com/lib/pq
+  version: 4ded0e9383f75c197b3a2aaa6d590ac52df6fd79
 - name: github.com/mattn/go-isatty
   version: 3fb116b820352b7f0c281308a4d6250c22d94e27
 - name: github.com/modern-go/concurrent
