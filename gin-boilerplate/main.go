@@ -1,9 +1,9 @@
 package main
 
 import (
-	"time"
 	"log"
 	"os"
+	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/contrib/sessions"
@@ -11,6 +11,7 @@ import (
 
 	"gin-boilerplate/config"
 	"gin-boilerplate/controllers"
+
 	"github.com/fvbock/endless"
 )
 
@@ -46,7 +47,7 @@ func main() {
 	r.Use(cors.New(corsConfig))
 
 	// Listen and Server in config.API.Domain:config.API.Port
-	err := endless.ListenAndServe(config.API.Domain + ":" + config.API.Port, r)
+	err := endless.ListenAndServe(config.API.Domain+":"+config.API.Port, r)
 	if err != nil {
 		log.Println(err)
 	}

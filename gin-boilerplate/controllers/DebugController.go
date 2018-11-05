@@ -3,15 +3,19 @@ package controllers
 import (
 	"net/http"
 
+	"gin-boilerplate/types"
+
 	"github.com/gin-gonic/gin"
 )
 
-// Ping
+// Ping debug function for ping
 func Ping(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"msg": "Pong"})
+	response := types.APIResponse{Msg: "Pong", Success: true}
+	c.JSON(http.StatusOK, response)
 }
 
-// Health
+// Health debug function for health
 func Health(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"msg": true})
+	response := types.APIResponse{Msg: true, Success: true}
+	c.JSON(http.StatusOK, response)
 }
