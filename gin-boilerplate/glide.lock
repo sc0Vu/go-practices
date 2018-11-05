@@ -1,6 +1,8 @@
-hash: cedf572acd8b6b23ee5e8bbb47bf701720877607085b6034143d33cf594939fd
-updated: 2018-11-05T15:41:23.198858+08:00
+hash: e7b62bd7cf9a1122b571c9bf0f911db36b683cccf1d0e315323f60da99a9dbfc
+updated: 2018-11-05T17:20:18.024061+08:00
 imports:
+- name: github.com/asaskevich/govalidator
+  version: ccb8e960c48f04d6935e72476ae4a51028f9e22f
 - name: github.com/fvbock/endless
   version: 447134032cb6a86814f570257390a379982dfc61
 - name: github.com/gin-contrib/cors

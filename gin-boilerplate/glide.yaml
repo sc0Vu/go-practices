@@ -11,3 +11,5 @@ import:
 - package: github.com/jmoiron/sqlx
 - package: github.com/lib/pq
   version: v1.0.0
+- package: github.com/asaskevich/govalidator
+  version: v9

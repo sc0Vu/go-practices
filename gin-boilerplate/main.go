@@ -44,6 +44,7 @@ func main() {
 			debugRouter.GET("/health", controllers.Health)
 			debugRouter.GET("/404", controllers.NotFound)
 		}
+		r.POST("/register", controllers.Register)
 	}
 	r.Use(cors.New(corsConfig))
 
