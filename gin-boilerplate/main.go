@@ -42,6 +42,7 @@ func main() {
 		{
 			debugRouter.GET("/ping", controllers.Ping)
 			debugRouter.GET("/health", controllers.Health)
+			debugRouter.GET("/404", controllers.NotFound)
 		}
 	}
 	r.Use(cors.New(corsConfig))

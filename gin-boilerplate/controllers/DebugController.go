@@ -19,3 +19,9 @@ func Health(c *gin.Context) {
 	response := types.APIResponse{Msg: true, Success: true}
 	c.JSON(http.StatusOK, response)
 }
+
+// NotFound debug function for not found
+func NotFound(c *gin.Context) {
+	response := types.APIErrResponse{Msg: "Something went wrong", Success: false, Err: "Not found"}
+	c.JSON(http.StatusNotFound, response)
+}
