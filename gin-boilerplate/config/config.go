@@ -2,8 +2,7 @@ package config
 
 import (
 	"io/ioutil"
-
-	"github.com/sirupsen/logrus"
+	"log"
 
 	yaml "gopkg.in/yaml.v2"
 )
@@ -24,17 +23,17 @@ type APIConf struct {
 
 // DeploySet - deploy config
 type DeploySet struct {
-	API      APIConf  `yaml:"api"`
+	API APIConf `yaml:"api"`
 }
 
 // ReadConf read the config file from input filePath
 func init() {
 	var dconf DeploySet
 	if content, ioErr := ioutil.ReadFile("./config/conf.yaml"); ioErr != nil {
-		logrus.Fatalf("read service config file error: %v", ioErr)
+		log.Fatalf("read service config file error: %v", ioErr)
 	} else {
 		if ymlErr := yaml.Unmarshal(content, &dconf); ymlErr != nil {
-			logrus.Fatalf("error while unmarshal from db config: %v", ymlErr)
+			log.Fatalf("error while unmarshal from db config: %v", ymlErr)
 		}
 	}
 
