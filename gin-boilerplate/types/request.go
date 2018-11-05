@@ -1,6 +1,6 @@
 package types
 
-// RegisterRequest is signup schema in post form
+// RegisterRequest is register schema in post form
 type RegisterRequest struct {
 	Email         string `json:"email" valid:"email,required"`
 	Password      string `json:"password" valid:"matches([a-zA-Z0-9]+),runelength(6|15),required"`
